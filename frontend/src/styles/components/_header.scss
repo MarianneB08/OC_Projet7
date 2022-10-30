@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 63px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: 309px;
+    height: 34px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.home {
+    width: 136px;
+}
+
+.home:active, .home:hover, .about:active, .about:hover {
+   text-decoration: underline 1px;
+   text-underline-offset: 2px;
+    
+}
+
+.logo {
+    width: 210.32px;
+    height: 68px;
+}
