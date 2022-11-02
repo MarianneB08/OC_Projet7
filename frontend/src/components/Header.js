@@ -17,10 +17,11 @@ const HeaderContainer = styled.div`
     margin-top: 20px;
     @media screen and (min-width: 360px) {
     
-    @media screen and (min-width: 481px) and (max-width: 767px){
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px){
         height: 55px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1440px) {
+    @media screen and (min-width: 769px) {
         height: 68px;
         max-width: 1240px;
     }
@@ -35,12 +36,12 @@ const Navigation = styled.ul`
         text-decoration: underline 1px;
         text-underline-offset: 2px;
     }
-    @media screen and (min-width: 481px) and (max-width: 767px){
+    @media screen and (min-width: 481px) and (max-width: 768px){
         text-transform: none;
         font-size: 18px;
         max-width: 220px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1440px) {
+    @media screen and (min-width: 769px) {
         text-transform: none;
         font-size: 24px;
         max-width: 309px;
