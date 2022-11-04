@@ -11,7 +11,7 @@ const BannerSection = styled.section`
     @media screen and (min-width: 769px) {
         max-width: 1240px;
         margin-top: 63px;
-        margin-bottom: 99px;
+        margin-bottom: 36px;
     }
 `
 const BannerContainer = styled.div`

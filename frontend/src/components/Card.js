@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import axios from 'axios';
+import PropTypes from 'prop-types';
+
 
 const CardBackground = styled.div`
     width: 89%;
@@ -82,5 +84,11 @@ const Card = () => {
         </CardBackground>
     );
 };
+
+Card.propTypes = {
+    key: PropTypes.string,
+    title: PropTypes.string,
+    cover: PropTypes.string,
+}
 
 export default Card;

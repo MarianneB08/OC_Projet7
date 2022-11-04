@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import LogoFooter from '../assets/logo-footer.svg';
+import LogoFooter from '../assets/logo_footer.svg';
 
 // ********** STYLES (MOBILE FIRST) ********** //
 
@@ -12,6 +12,7 @@ const FooterContainer = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 66px;
+    margin-top: 100px;
 `
 
 const FooterLogo = styled.img`

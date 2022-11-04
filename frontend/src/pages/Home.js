@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../components/Card';
 import Banner from '../components/Banner';
-import BannerImg from '../assets/banner.jpg';
+import BannerImg from '../assets/banner_home.jpg';
 
 const Home = () => {
     return (
