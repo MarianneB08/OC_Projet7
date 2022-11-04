@@ -1,10 +1,11 @@
 import React from 'react';
+import Error from '../components/Error';
 
 const Error404 = () => {
     return (
-        <div>
-            <h1>Erreur 404</h1>
-        </div>
+        <>
+            <Error />
+        </>
     );
 };
 
