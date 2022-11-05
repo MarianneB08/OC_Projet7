@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import axios from 'axios';
 import PropTypes from 'prop-types';
-
+import DataFile from '../data.json';
 
 const CardBackground = styled.div`
     width: 89%;
@@ -62,15 +61,10 @@ const CardTitle = styled.h2`
 `
 
 const Card = () => {
-    const [data, setData] = useState([])
-    useEffect(() => {
-        axios
-            .get('data.json')
-            .then((res) => setData(res.data));
-    }, [])
+
     return (
         <CardBackground>
-            {data.map((lodging) => (
+            {DataFile.map((lodging) => (
                 <Link to={`/lodgings/${lodging.id}`} key={lodging.id} className='Link'>
                     <CardItem key={lodging.id}>
                         <CardImg
