@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
-import Slideshow from '../components/Slideshow';
+import ImageSlider from '../components/ImageSlider';
 import DataFile from '../data.json';
 import { useParams, useNavigate } from 'react-router-dom';
-import LodgingInfos from '../components/LodgingInfos';
-import Collapse from '../components/Collapse';
 
 
+const containerStyles = {
+    maxWidth: '1240px',
+    height: '415px',
+    margin: '0 auto'
+}
 
 const Lodgings = () => {
     const params = useParams();
@@ -23,12 +26,9 @@ const Lodgings = () => {
             {DataFile
                 .filter((lodging) => lodging.id === params.id)
                 .map((lodging) => (
-                    <div>
-                        <Slideshow key={lodging.pictures} pictures={lodging.pictures} />
-                        <LodgingInfos key={lodging.title} infos={lodging} />
-                        <div>
-                            <Collapse />
-                            <Collapse />
+                    <div key={lodging.title}>
+                        <div style={containerStyles}>
+                            <ImageSlider key={lodging.pictures} pictures={lodging.pictures}></ImageSlider>
                         </div>
                     </div>
                 ))}
