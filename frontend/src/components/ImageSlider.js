@@ -10,6 +10,9 @@ const Slider = styled.div`
     margin-top: 30px;
     border-radius: 10px;
     position: relative;
+    @media screen and (min-width: 769px) {
+        border-radius: 25px;
+    }
 `
 
 const SlideImg = styled.img`
@@ -17,26 +20,63 @@ const SlideImg = styled.img`
     height: 415px;
     object-fit: cover;
     border-radius: 10px;
+    @media screen and (min-width: 769px) {
+        border-radius: 25px;
+    }
 `
 const LeftArrow = styled.img`
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    left: 80px;
+    left: 20px;
     z-index: 1;
     cursor: pointer;
+    width: 12px;
+    height: 20px;
+    @media screen and (min-width: 769px) and (max-width: 1000px) {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 30px;
+        z-index: 1;
+        cursor: pointer;
+        width: 30px;
+        height: 55px;
+    }
+    @media screen and (min-width: 1001px) {
+        width: 47px;
+        height: 79px;
+    }
 `
 const RightArrow = styled.img`
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    right: 80px;
+    right: 20px;
     z-index: 1;
     cursor: pointer;
+    width: 12px;
+    height: 20px;
+    @media screen and (min-width: 769px) and (max-width: 1000px) {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 30px;
+        z-index: 1;
+        cursor: pointer;
+        width: 30px;
+        height: 55px;
+    }
+    @media screen and (min-width: 1001px) {
+        width: 47px;
+        height: 79px;
+    }
 `
 
 const ImgCounter = styled.div`
-    @media screen and (min-width: 769px) and (max-width: 1000px) {
+    opacity: 0;
+    @media screen and (min-width: 769px) {
+        opacity: 1;
         color: #ffffff;
         position: absolute;
         bottom: 25px;
