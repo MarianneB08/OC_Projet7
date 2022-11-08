@@ -1,0 +1,70 @@
+/* ---------- MOBILE-FIRST ---------- */
+
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    .errorType {
+        font-weight: 700;
+        font-size: 96px;
+        color: #FF6060;
+    }
+    .errorDescription {
+        margin-top: 11px;
+        width: 260px;
+        font-size: 18px;
+        color: #FF6060;
+        text-align: center;
+    }
+    .homeLink {
+        margin-top: 133px;
+        margin-bottom: 100px;
+        font-size: 14px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+
+/* ---------- MEDIA QUERIES - TAB ---------- */
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    .errorContainer {
+        .errorDescription {
+            width: 100%;
+            font-size: 25px;
+        }
+        .homeLink {
+            font-size: 16px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/* ---------- MEDIA QUERIES - DESKTOP ---------- */
+
+@media screen and (min-width: 1001px) {
+    .errorContainer {
+        .errorType {
+            font-size: 200px;
+        }
+        .errorDescription {
+            width: 100%;
+            font-size: 36px;
+        }
+        .homeLink {
+            width: 100%;
+            font-size: 18px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/* ---------- MOBILE-FIRST ---------- */
+.lodgingInfos {
+  color: #FF6060;
+}
+.lodgingInfos .lodgingTitle {
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+  word-break: break-word;
+  line-height: 25.7px;
+}
+.lodgingInfos .lodgingLocation {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.lodgingInfos .tagsList {
+  min-width: 310px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  font-size: 10px;
+  line-height: 14.2px;
+  margin-top: 12.1px;
+  flex-wrap: wrap;
+}
+.lodgingInfos .tagsList .tag {
+  width: auto;
+  height: auto;
+  padding: 3% 6%;
+  margin-right: 1%;
+  height: 18px;
+  color: #FFFFFF;
+  background-color: #FF6060;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  .lodgingInfos .tagsList {
+    max-width: 320px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 551px) and (max-width: 650) {
+  .lodgingInfos .tagsList {
+    width: 10%;
+  }
+}
+/* ---------- RESPONSIVE TAB ---------- */
+/* ---------- RESPONSIVE DESKTOP ---------- *//*# sourceMappingURL=LodgingInfos.module.css.map */

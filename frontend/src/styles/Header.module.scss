@@ -1,0 +1,73 @@
+/* ---------- MOBILE-FIRST ---------- */
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 20px;
+    .logo { 
+        height: 100%;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        width: 42%;
+        text-transform: uppercase;
+        .homeLink {
+            &:hover {
+                text-decoration: underline 1px;
+                text-underline-offset: 2px;
+            }
+        }
+        .aboutLink {
+            &:hover {
+                text-decoration: underline 1px;
+                text-underline-offset: 2px;
+            }
+        }
+    }
+}
+
+/* ---------- MEDIA QUERIES - TAB ---------- */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .headerContainer {
+        height: 55px;
+        .navigation {
+            text-transform: none;
+            font-size: 18px;
+            max-width: 220px;
+            .homeLink {
+                &:hover {
+                    text-decoration: underline 1px;
+                    text-underline-offset: 2px;
+                }
+            }
+            .aboutLink {
+                &:hover {
+                    text-decoration: underline 1px;
+                    text-underline-offset: 2px;
+                }
+            }
+        }
+    }    
+}
+
+
+/* ---------- MEDIA QUERIES - DESKTOP ---------- */
+
+@media screen and (min-width: 769px) {
+    .headerContainer {
+        height: 68px;
+        max-width: 1240px;
+        .navigation {
+            text-transform: none;
+            font-size: 24px;
+            max-width: 309px;
+        }
+    }
+}
