@@ -1,0 +1,20 @@
+/* ---------- MOBILE-FIRST ---------- */
+.starIcon {
+  width: 15px;
+  height: 15px;
+}
+
+/* ---------- RESPONSIVE TAB ---------- */
+@media screen and (min-width: 769px) and (max-width: 1050px) {
+  .starIcon {
+    width: 22px;
+    height: 22px;
+  }
+}
+/* ---------- RESPONSIVE DESKTOP ---------- */
+@media screen and (min-width: 1051px) {
+  .starIcon {
+    width: 30px;
+    height: 30px;
+  }
+}/*# sourceMappingURL=Rate.module.css.map */
