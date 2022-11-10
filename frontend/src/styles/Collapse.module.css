@@ -15,7 +15,7 @@
   }
 }
 .container {
-  width: 89%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@
 /* ---------- MEDIA QUERIES - TAB ---------- */
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   .container {
-    width: 75%;
+    width: 89%;
   }
   .container .title {
     font-size: 16px;
@@ -82,7 +82,7 @@
 /* ---------- MEDIA QUERIES - DESKTOP ---------- */
 @media screen and (min-width: 1001px) {
   .container {
-    width: 75%;
+    width: 78%;
   }
   .container .title {
     font-size: 24px;

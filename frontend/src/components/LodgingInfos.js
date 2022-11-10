@@ -1,27 +1,27 @@
 import React from 'react';
-import styles from '../styles/LodgingInfos.module.scss';
+import LodgingInfosStyles from '../styles/LodgingInfos.module.scss';
 import Rate from './Rate';
 
 
 const LodgingInfos = ({ title, location, tags, host, rating }) => {
 
     return (
-        <div className={styles.sections}>
-            <div className={styles.lodgingInfos}>
-                <h1 className={styles.lodgingTitle}>{title}</h1>
-                <h2 className={styles.lodgingLocation}>{location}</h2>
-                <div className={styles.tagsList}>
+        <div className={LodgingInfosStyles.sections}>
+            <div className={LodgingInfosStyles.lodgingInfos}>
+                <h1 className={LodgingInfosStyles.lodgingTitle}>{title}</h1>
+                <h2 className={LodgingInfosStyles.lodgingLocation}>{location}</h2>
+                <div className={LodgingInfosStyles.tagsList}>
                     {tags.map((tag, index) => (
-                        <div key={index} className={styles.tag}>{tag}</div>
+                        <div key={index} className={LodgingInfosStyles.tag}>{tag}</div>
                     ))}
                 </div>
             </div>
-            <div className={styles.hostAndRatingInfos}>
-                <div className={styles.host}>
-                    <p className={styles.hostName}>{host.name}</p>
-                    <img className={styles.hostPicture} src={host.picture} alt={host.name} />
+            <div className={LodgingInfosStyles.hostAndRatingInfos}>
+                <div className={LodgingInfosStyles.host}>
+                    <p className={LodgingInfosStyles.hostName}>{host.name}</p>
+                    <img className={LodgingInfosStyles.hostPicture} src={host.picture} alt={host.name} />
                 </div>
-                <div className={styles.rating}>
+                <div className={LodgingInfosStyles.rating}>
                     <Rate rating={parseInt(rating)} />
                 </div>
             </div>

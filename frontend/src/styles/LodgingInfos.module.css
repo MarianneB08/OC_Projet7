@@ -1,4 +1,11 @@
 /* ---------- MOBILE-FIRST ---------- */
+.sections {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
 .sections .lodgingInfos {
   color: #FF6060;
 }
@@ -80,6 +87,7 @@
 @media screen and (min-width: 550px) and (max-width: 1050px) {
   .sections {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   .sections .lodgingInfos .lodgingTitle {
@@ -111,6 +119,7 @@
 @media screen and (min-width: 1051px) {
   .sections {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   .sections .lodgingInfos .lodgingTitle {

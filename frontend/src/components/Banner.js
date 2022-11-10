@@ -1,16 +1,16 @@
 import React from 'react';
-import styles from '../styles/Banner.module.scss';
+import BannerStyles from '../styles/Banner.module.scss';
 
 
 const Banner = ({ src, slogan, alt }) => {
     return (
-        <section className={styles.bannerSection}>
-            <div className={styles.bannerContainer}>
-                <img className={styles.bannerImg}
+        <section className={BannerStyles.bannerSection}>
+            <div className={BannerStyles.bannerContainer}>
+                <img className={BannerStyles.bannerImg}
                     src={src}
                     alt={alt}
                 />
-                <h1 className={styles.slogan}>{slogan}</h1>
+                <h1 className={BannerStyles.slogan}>{slogan}</h1>
             </div>
         </section>
 

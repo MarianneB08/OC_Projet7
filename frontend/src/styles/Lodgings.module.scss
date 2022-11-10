@@ -1,12 +1,9 @@
 /* ---------- MOBILE-FIRST ---------- */
 
-.infosContainer {
+.collapseContainer {
     width: 90%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
 }
-
 
 
 /* ---------- RESPONSIVE TAB ---------- */
@@ -14,3 +11,17 @@
 
 
 /* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: 1001px) {
+    .collapsesContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .collapse {
+            width: 90%;
+            p {
+                font-size: 18px;
+            }
+        }    
+    }
+}

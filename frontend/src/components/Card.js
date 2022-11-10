@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../styles/Card.module.scss';
+import CardStyles from '../styles/Card.module.scss';
 import PropTypes from 'prop-types';
 import DataFile from '../data.json';
 
 const Card = () => {
     return (
-        <div className={styles.cardBackground}>
+        <div className={CardStyles.cardBackground}>
             {DataFile.map((lodging) => (
-                <Link to={`/lodgings/${lodging.id}`} key={lodging.id} className={styles.link}>
-                    <div key={lodging.id} className={styles.cardItem}>
+                <Link to={`/lodgings/${lodging.id}`} key={lodging.id} className={CardStyles.link}>
+                    <div key={lodging.id} className={CardStyles.cardItem}>
                         <img
-                            className={styles.cardImg}
+                            className={CardStyles.cardImg}
                             src={lodging.cover}
                             alt={lodging.title}
                         />
-                        <h2 className={styles.cardTitle}>{lodging.title}</h2>
+                        <h2 className={CardStyles.cardTitle}>{lodging.title}</h2>
                     </div>
                 </Link>
             ))}

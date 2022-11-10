@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../styles/ImageSlider.module.scss';
+import ImageSliderStyles from '../styles/ImageSlider.module.scss';
 import ArrowLeft from './Images/arrow_left.svg'
 import ArrowRight from './Images/arrow_right.svg';
 
@@ -19,22 +19,22 @@ const ImageSlider = ({ pictures }) => {
     }
 
     return (
-        <div className={styles.slider}>
+        <div className={ImageSliderStyles.slider}>
             <img
-                className={styles.slideImg}
+                className={ImageSliderStyles.slideImg}
                 src={pictures[currentIndex]}
                 alt={pictures.title}
                 key={currentIndex} />
             <img
-                className={styles.leftArrow}
+                className={ImageSliderStyles.leftArrow}
                 src={pictures.length === 1 ? `` : ArrowLeft}
                 alt={pictures.length === 1 ? `` : `flèche gauche`}
                 onClick={goToPrevious} />
-            <div className={styles.slideCounter}>
+            <div className={ImageSliderStyles.slideCounter}>
                 {currentIndex + 1}/{pictures.length}
             </div>
             <img
-                className={styles.rightArrow}
+                className={ImageSliderStyles.rightArrow}
                 src={pictures.length === 1 ? `` : ArrowRight}
                 alt={pictures.length === 1 ? `` : `flèche droite`}
                 onClick={goToNext} />

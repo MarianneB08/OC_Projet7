@@ -1,19 +1,17 @@
 import React from 'react';
-import styles from '../styles/Header.module.scss';
+import HeaderStyles from '../styles/Header.module.scss';
 import { NavLink } from 'react-router-dom';
 import Logo from '../assets/logo_header.svg';
 
-// Prévoir un menu burger pour min-width: 360px)
-
 const Header = () => {
     return (
-        <div className={styles.headerContainer}>
-            <img className={styles.logo} src={Logo} alt='kasa' />
-            <ul className={styles.navigation}>
-                <NavLink to='/' className={styles.homeLink}>
+        <div className={HeaderStyles.headerContainer}>
+            <img className={HeaderStyles.logo} src={Logo} alt='kasa' />
+            <ul className={HeaderStyles.navigation}>
+                <NavLink to='/' className={HeaderStyles.homeLink}>
                     Accueil
                 </NavLink>
-                <NavLink to='/about' className={styles.aboutLink}>
+                <NavLink to='/about' className={HeaderStyles.aboutLink}>
                     A propos
                 </NavLink>
             </ul>
