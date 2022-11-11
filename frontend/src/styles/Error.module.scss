@@ -1,4 +1,4 @@
-/* ---------- MOBILE-FIRST ---------- */
+/* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 
 .errorContainer {
     display: flex;
@@ -29,11 +29,12 @@
 }
 
 
+/* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
 
 
-/* ---------- MEDIA QUERIES - TAB ---------- */
+/* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
 
-@media screen and (min-width: 769px) and (max-width: 1000px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .errorContainer {
         .errorDescription {
             width: 100%;
@@ -48,9 +49,11 @@
     }
 }
 
-/* ---------- MEDIA QUERIES - DESKTOP ---------- */
 
-@media screen and (min-width: 1001px) {
+
+/* ---------- DESKTOP, LARGE SCREENS (min-width: 1025px / max-width: 1200px) ---------- */
+
+@media screen and (min-width: 1025px) {
     .errorContainer {
         .errorType {
             font-size: 200px;
@@ -60,6 +63,7 @@
             font-size: 36px;
         }
         .homeLink {
+            margin-top: 182px;
             width: 100%;
             font-size: 18px;
             &:hover {
@@ -68,3 +72,5 @@
         }
     }
 }
+
+/* ---------- EXTRA LARGE SCREENS (min-width: 1201px) ---------- */

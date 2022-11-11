@@ -1,4 +1,4 @@
-/* ---------- MOBILE-FIRST ---------- */
+/* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 
 .sections {
     width: 90%;
@@ -16,7 +16,6 @@
             line-height: 25.7px;
         }
         .lodgingLocation {
-            margin-top: 5px;
             font-weight: 400;
             font-size: 14px;
             line-height: 25.7px;
@@ -25,8 +24,9 @@
             display: flex;
             justify-content: flex-start;
             flex-wrap: wrap;
-            height: 45px;
+            height: fit-content;
             margin-top: 12.1px;
+            margin-bottom: 15px;
             font-size: 10px;
             line-height: 14.2px;
             .tag {
@@ -43,6 +43,7 @@
         }
     }
     .hostAndRatingInfos {
+        margin-top: 0px;
         .rating {
             margin-top: 0px;
         }
@@ -61,11 +62,11 @@
         align-items: center;
         .hostName {
             display: flex;
-            width: 60px;
+            width: min-content;
             text-align: right;
             font-size: 12px;
             margin-right: 10.5px;
-            word-wrap: break-word;
+            
         }
         .hostPicture {
             width: 32px;
@@ -75,8 +76,10 @@
     }
 }
 
+/* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
 
-/* ---------- RESPONSIVE TAB & DESKTOP ---------- */
+
+/* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
 
 @media screen and (min-width: 769px) {
     .sections {
@@ -96,14 +99,14 @@
 
 /* ---------- RESPONSIVE TAB ---------- */
 
-@media screen and (min-width: 550px) and (max-width: 1050px) {
+@media screen and (min-width: 769px) {
     .sections {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         .lodgingInfos {
             .lodgingTitle {
-                font-size: 25px;
+                font-size: 20px;
                 line-height: 37px;
             }
             .lodgingLocation {
@@ -125,20 +128,23 @@
                     border-radius: 50%;
                 }
             }
-            .rating{
-                margin-bottom: 15px;
+            .rating {
+                margin-top: 0;
+                margin-bottom: 10px;
+                width: max-content;
             }
         }
     }
 }
 
-/* ---------- RESPONSIVE DESKTOP ---------- */
+/* ---------- DESKTOP, LARGE SCREENS (min-width: 1025px / max-width: 1200px) ---------- */
 
-@media screen and (min-width: 1051px) {
+@media screen and (min-width: 1025px) {
     .sections {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        max-width: 1240px;
         .lodgingInfos {
             .lodgingTitle {
                 font-size: 36px;
@@ -153,6 +159,7 @@
             display: flex;
             flex-direction: column;
             height: 120px;
+            margin-left: 30px;
             .hostName {
                 font-size: 18px;
             }
@@ -161,6 +168,13 @@
                 height: 64px;
                 border-radius: 50%;
             }
+            .rating {
+                margin-top: 30px;
+                margin-bottom: 10px;
+                width: max-content;
+            }
         }
     }
 }
+
+/* ---------- EXTRA LARGE SCREENS (min-width: 1201px) ---------- */

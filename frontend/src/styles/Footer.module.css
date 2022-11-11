@@ -1,4 +1,4 @@
-/* ---------- MOBILE-FIRST ---------- */
+/* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 .footerContainer {
   background-color: #000000;
   width: 100%;
@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 66px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .footerContainer .footerLogo {
   width: 122px;
@@ -19,15 +19,17 @@
   margin-top: 28.5px;
 }
 
-/* ---------- MEDIA QUERIES - TAB ---------- */
+/* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .footerContainer .footerText {
     font-size: 16px;
   }
 }
-/* ---------- MEDIA QUERIES - DESKTOP ---------- */
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+/* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
+@media screen and (min-width: 769px) {
   .footerContainer .footerText {
     font-size: 24px;
   }
-}/*# sourceMappingURL=Footer.module.css.map */
+}
+/* ---------- DESKTOP, LARGE SCREENS (min-width: 1025px / max-width: 1200px) ---------- */
+/* ---------- EXTRA LARGE SCREENS (min-width: 1201px) ---------- *//*# sourceMappingURL=Footer.module.css.map */

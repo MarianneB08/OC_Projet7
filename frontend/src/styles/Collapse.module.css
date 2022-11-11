@@ -1,5 +1,5 @@
-/* ---------- MOBILE-FIRST ---------- */
-@keyframes scrolling {
+/* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
+@keyframes scrollingDown {
   0% {
     transform: translateY(-50%);
     opacity: 0;
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .container .title {
   background-color: #FF6060;
@@ -57,14 +57,16 @@
   padding-bottom: 20px;
   padding-left: 10px;
   word-break: break-word;
-  animation-name: scrolling;
+  animation-name: scrollingDown;
   animation-duration: 0.6s;
 }
 
-/* ---------- MEDIA QUERIES - TAB ---------- */
-@media screen and (min-width: 769px) and (max-width: 1000px) {
+/* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
+/* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     width: 89%;
+    margin-bottom: 20px;
   }
   .container .title {
     font-size: 16px;
@@ -80,9 +82,10 @@
   }
 }
 /* ---------- MEDIA QUERIES - DESKTOP ---------- */
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1025px) {
   .container {
-    width: 78%;
+    width: 100%;
+    margin-bottom: 20px;
   }
   .container .title {
     font-size: 24px;
@@ -94,6 +97,11 @@
     margin-right: 10px;
   }
   .container .content {
-    font-size: 24px;
+    font-size: 18px;
+    height: max-content;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
-}/*# sourceMappingURL=Collapse.module.css.map */
+}
+/* ---------- DESKTOP, LARGE SCREENS (min-width: 1025px / max-width: 1200px) ---------- */
+/* ---------- EXTRA LARGE SCREENS (min-width: 1201px ---------- *//*# sourceMappingURL=Collapse.module.css.map */
