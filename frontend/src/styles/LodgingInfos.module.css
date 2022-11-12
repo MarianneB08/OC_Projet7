@@ -76,18 +76,6 @@
 /* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
 /* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
 @media screen and (min-width: 769px) {
-  .sections .lodgingInfos .tagsList {
-    margin-top: 20px;
-    margin-bottom: 26px;
-  }
-  .sections .lodgingInfos .tagsList .tag {
-    height: 25px;
-    font-size: 14px;
-    border-radius: 10px;
-  }
-}
-/* ---------- RESPONSIVE TAB ---------- */
-@media screen and (min-width: 769px) {
   .sections {
     display: flex;
     flex-direction: row;
@@ -100,6 +88,15 @@
   .sections .lodgingInfos .lodgingLocation {
     font-size: 16px;
     line-height: 25.7px;
+  }
+  .sections .lodgingInfos .tagsList {
+    margin-top: 20px;
+    margin-bottom: 26px;
+  }
+  .sections .lodgingInfos .tagsList .tag {
+    height: 25px;
+    font-size: 14px;
+    border-radius: 10px;
   }
   .sections .hostAndRatingInfos {
     display: flex;
