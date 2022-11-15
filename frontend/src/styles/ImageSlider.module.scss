@@ -16,8 +16,7 @@
     }
     .leftArrow {
         position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
+        top: 47%;
         left: 10px;
         z-index: 1;
         cursor: pointer;
@@ -29,8 +28,7 @@
     }
     .rightArrow {
         position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
+        top: 47%;
         right: 10px;
         z-index: 1;
         cursor: pointer;
@@ -60,13 +58,11 @@
             position: absolute;
             bottom: 25px;
             left: 50%;
-            transform: translate (0, -50%);
             font-size: 18px;
         }
         .leftArrow {
             position: absolute;
-            top: 50%;
-            transform: translate(0, -50%);
+            top: 45%;
             left: 23.3px;
             z-index: 1;
             cursor: pointer;
@@ -75,8 +71,7 @@
         }
         .rightArrow {
             position: absolute;
-            top: 50%;
-            transform: translate(0, -50%);
+            top: 45%;
             right: 23.3px;
             z-index: 1;
             cursor: pointer;
@@ -104,18 +99,19 @@
             position: absolute;
             bottom: 25px;
             left: 50%;
-            transform: translate (0, -50%);
             font-size: 18px;
         }
         .leftArrow {
             left: 23.3px;
             width: 47px;
             height: 79px;
+            top: 39%;
         }
         .rightArrow {
             right: 23.3px;
             width: 47px;
             height: 79px;
+            top: 39%;
         }
     }
 }
