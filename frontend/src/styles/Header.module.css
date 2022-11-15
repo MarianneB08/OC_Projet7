@@ -19,11 +19,13 @@
   text-transform: uppercase;
 }
 .headerContainer .navigation .homeLink:hover {
-  text-decoration: underline 1px;
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
   text-underline-offset: 2px;
 }
 .headerContainer .navigation .aboutLink:hover {
-  text-decoration: underline 1px;
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
   text-underline-offset: 2px;
 }
 
@@ -38,11 +40,13 @@
     max-width: 220px;
   }
   .headerContainer .navigation .homeLink:hover {
-    text-decoration: underline 1px;
+    -webkit-text-decoration: underline 1px;
+            text-decoration: underline 1px;
     text-underline-offset: 2px;
   }
   .headerContainer .navigation .aboutLink:hover {
-    text-decoration: underline 1px;
+    -webkit-text-decoration: underline 1px;
+            text-decoration: underline 1px;
     text-underline-offset: 2px;
   }
 }
