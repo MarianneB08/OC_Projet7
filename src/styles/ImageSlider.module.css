@@ -36,6 +36,9 @@
   width: 11.7px;
   height: 20px;
 }
+.slider .hiddenArrow {
+  display: none;
+}
 
 /* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
 /* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */

@@ -26,17 +26,17 @@ const ImageSlider = ({ pictures }) => {
                 alt={pictures.title}
                 key={currentIndex} />
             <img
-                className={ImageSliderStyles.leftArrow}
-                src={pictures.length === 1 ? `` : ArrowLeft}
-                alt={pictures.length === 1 ? `` : `flèche gauche`}
+                className={pictures.length === 1 ? ImageSliderStyles.hiddenArrow : ImageSliderStyles.leftArrow}
+                src={ArrowLeft}
+                alt="flèche gauche"
                 onClick={goToPrevious} />
             <div className={ImageSliderStyles.slideCounter}>
                 {currentIndex + 1}/{pictures.length}
             </div>
             <img
-                className={ImageSliderStyles.rightArrow}
-                src={pictures.length === 1 ? `` : ArrowRight}
-                alt={pictures.length === 1 ? `` : `flèche droite`}
+                className={pictures.length === 1 ? ImageSliderStyles.hiddenArrow : ImageSliderStyles.rightArrow}
+                src={ArrowRight}
+                alt="flèche droite"
                 onClick={goToNext} />
         </div>
     )
