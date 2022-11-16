@@ -1,5 +1,5 @@
 import React from 'react';
-import LodgingInfosStyles from '../styles/LodgingInfos.module.scss';
+import LodgingInfosStyles from '../styles/components/LodgingInfos.module.scss';
 import Rate from './Rate';
 
 

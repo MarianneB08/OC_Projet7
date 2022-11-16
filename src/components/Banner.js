@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerStyles from '../styles/Banner.module.scss';
+import BannerStyles from '../styles/components/Banner.module.scss';
 
 
 const Banner = ({ src, slogan, alt }) => {

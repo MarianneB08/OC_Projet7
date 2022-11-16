@@ -4,7 +4,7 @@ import DataFile from '../data.json';
 import ImageSlider from '../components/ImageSlider';
 import LodgingInfos from '../components/LodgingInfos';
 import Collapse from '../components/Collapse';
-import LodgingsStyles from '../styles/Lodgings.module.scss';
+import LodgingsStyles from '../styles/pages/Lodgings.module.scss';
 
 const Lodgings = () => {
     const params = useParams();

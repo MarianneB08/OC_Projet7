@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ImageSliderStyles from '../styles/ImageSlider.module.scss';
+import ImageSliderStyles from '../styles/components/ImageSlider.module.scss';
 import ArrowLeft from './Images/arrow_left.svg'
 import ArrowRight from './Images/arrow_right.svg';
 

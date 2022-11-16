@@ -1,8 +1,8 @@
 import React from 'react';
 import Collapse from '../components/Collapse';
 import Banner from '../components/Banner';
-import BannerImg from '../assets/banner_about.jpg';
-import AboutStyles from '../styles/About.module.scss';
+import BannerImg from '../components/Images/banner_about.jpg';
+import AboutStyles from '../styles/pages/About.module.scss';
 
 const About = () => {
     return (

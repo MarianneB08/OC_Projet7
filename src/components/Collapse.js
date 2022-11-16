@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CollapseStyles from '../styles/Collapse.module.scss';
+import CollapseStyles from '../styles/components/Collapse.module.scss';
 import ArrowUp from './Images/arrow_up.svg'
 import ArrowDown from './Images/arrow_down.svg';
 

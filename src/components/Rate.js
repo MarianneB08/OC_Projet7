@@ -1,7 +1,7 @@
 import React from 'react';
 import PinkStar from '../components/Images/pink_star.svg';
 import GreyStar from '../components/Images/grey_star.svg';
-import RateStyles from '../styles/Rate.module.scss';
+import RateStyles from '../styles/components/Rate.module.scss';
 
 const Rate = ({ rating }) => {
     const range = [1, 2, 3, 4, 5];

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CardStyles from '../styles/Card.module.scss';
+import CardStyles from '../styles/components/Card.module.scss';
 import PropTypes from 'prop-types';
 import DataFile from '../data.json';
 
