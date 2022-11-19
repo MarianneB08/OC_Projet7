@@ -1,26 +1,20 @@
 /* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
-.bannerSection {
-  margin: 0 auto;
-  width: 89%;
-  margin-top: 16px;
-  margin-bottom: 22px;
-}
-.bannerSection .bannerContainer {
+.bannerContainer {
   width: 100%;
-  height: 111px;
-  position: relative;
-  background-color: #000000;
-  border-radius: 10px;
+  height: 100%;
 }
-.bannerSection .bannerContainer .bannerImg {
+.bannerContainer .bannerImgMobile {
   width: 100%;
-  height: 111px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
   opacity: 0.7;
 }
-.bannerSection .bannerContainer .slogan {
+.bannerContainer .bannerImgDesktop {
+  display: none;
+}
+.bannerContainer .slogan {
   position: absolute;
   top: 31px;
   margin-left: 16px;
@@ -28,28 +22,50 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
-/* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
-@media screen and (min-width: 769px) {
-  .bannerSection {
+@media screen and (min-width: 481px) {
+  .bannerContainer {
+    height: 223px;
+    border-radius: 10px;
     max-width: 1240px;
     margin-top: 63px;
     margin-bottom: 36px;
   }
-  .bannerSection .bannerContainer {
-    height: 223px;
-    border-radius: 25px;
+  .bannerContainer .bannerImgMobile {
+    display: none;
   }
-  .bannerSection .bannerContainer .bannerImg {
+  .bannerContainer .bannerImgDesktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 1240px;
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+}
+/* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
+@media screen and (min-width: 769px) {
+  .bannerContainer {
+    border-radius: 10px;
+  }
+  .bannerContainer .bannerImgDesktop {
+    border-radius: 10px;
+  }
+}
+/* ---------- DESKTOP, LARGE SCREENS (min-width: 1025px / max-width: 1200px) ---------- */
+@media screen and (min-width: 1025px) {
+  .bannerContainer .bannerImgDesktop {
     border-radius: 25px;
   }
-  .bannerSection .bannerContainer .slogan {
+  .bannerContainer .slogan {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -58,10 +74,9 @@
     margin-left: 0;
   }
 }
-/* ---------- DESKTOP, LARGE SCREENS (min-width: 1025px / max-width: 1200px) ---------- */
 /* ---------- EXTRA LARGE SCREENS (min-width: 1201px) ---------- */
 @media screen and (min-width: 1201px) {
-  .bannerSection .bannerContainer .slogan {
+  .bannerContainer .slogan {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

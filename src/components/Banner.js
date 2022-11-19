@@ -4,17 +4,17 @@ import BannerStyles from '../styles/components/Banner.module.scss';
 
 const Banner = ({ src, slogan, alt }) => {
     return (
-        <section className={BannerStyles.bannerSection}>
-            <div className={BannerStyles.bannerContainer}>
-                <img className={BannerStyles.bannerImg}
-                    src={src}
+            <div className={`${BannerStyles.bannerContainer} ${BannerStyles.bannerAboutContainer}`}>
+                <img className={`${BannerStyles.bannerImgMobile} ${BannerStyles.bannerAboutImgMobile}` }
+                    src={src[0]}
+                    alt={alt}
+                />
+                <img className={BannerStyles.bannerImgDesktop}
+                    src={src[1]}
                     alt={alt}
                 />
                 <h1 className={BannerStyles.slogan}>{slogan}</h1>
             </div>
-        </section>
-
-
     );
 };
 

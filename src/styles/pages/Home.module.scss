@@ -1,57 +1,35 @@
 /* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 
-.bannerContainer {
+.bannerContainer {  
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 89%;
-  max-width: 1240px;
-  height: 50%;
+  height: 111px;
   margin-top: 16px;
   margin-bottom: 22px;
   background-color: #000000;
   border-radius: 10px;
-}
-
-.collapsesContainer {
-  width: 99%;
-  height: auto;
-  margin-bottom: 98px;
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 /* ---------- IPAD, TABLETS (min-width: 481px / max-width: 768px) ---------- */
 
 @media screen and (min-width: 481px) {
     .bannerContainer {
-        height: 223px;
-        border-radius: 10px;
-        position: relative;
-        max-width: 1240px;
+    height: 111px;
     }
 }
 
 /* ---------- SMALL SCREENS, LAPTOPS (min-width: 769px / max-width: 1024px) ---------- */
 
-@media screen and (min-width: 769px) {
-  .bannerContainer {
-    border-radius: 10px;
-  }
-  .collapsesContainer {
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 181px;
-    row-gap: 5px;
-  }
-}
-
 /* ---------- DESKTOP, LARGE SCREENS (min-width: 1025px / max-width: 1200px) ---------- */
 
 @media screen and (min-width: 1025px) {
     .bannerContainer {
-        border-radius: 25px;
+    height: 223px;
+    border-radius: 25px;
     }
 }
 

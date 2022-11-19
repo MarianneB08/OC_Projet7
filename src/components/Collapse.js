@@ -3,7 +3,6 @@ import CollapseStyles from '../styles/components/Collapse.module.scss';
 import ArrowUp from './Images/arrow_up.svg'
 import ArrowDown from './Images/arrow_down.svg';
 
-
 const Collapse = ({ title, content }) => {
     const [text, setText] = useState(false);
     const display = () => {

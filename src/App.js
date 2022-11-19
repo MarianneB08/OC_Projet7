@@ -6,7 +6,6 @@ import "./styles/globals.scss";
 
 const App = () => {
   return (
-  
       <BrowserRouter>
         <Layout>
           <Router />
