@@ -39,12 +39,12 @@
     font-size: 18px;
     max-width: 220px;
   }
-  .headerContainer .navigation .homeLink:hover {
+  .headerContainer .navigation .homeLink:hover, .headerContainer .navigation .homeLink:active {
     -webkit-text-decoration: underline 1px;
             text-decoration: underline 1px;
     text-underline-offset: 2px;
   }
-  .headerContainer .navigation .aboutLink:hover {
+  .headerContainer .navigation .aboutLink:hover, .headerContainer .navigation .aboutLink:active {
     -webkit-text-decoration: underline 1px;
             text-decoration: underline 1px;
     text-underline-offset: 2px;

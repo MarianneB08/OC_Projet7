@@ -2,7 +2,7 @@ import React from 'react';
 import LodgingInfosStyles from '../styles/components/LodgingInfos.module.scss';
 import Rate from './Rate';
 
-
+// Le composant LodgingInfos s'appuie sur les props "title", "location", "tags", "host", "rating" passées via la page Lodgings
 const LodgingInfos = ({ title, location, tags, host, rating }) => {
 
     return (

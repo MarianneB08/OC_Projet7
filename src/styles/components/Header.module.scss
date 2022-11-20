@@ -41,17 +41,14 @@
             text-transform: none;
             font-size: 18px;
             max-width: 220px;
-            .homeLink {
-                &:hover {
+            .homeLink:hover, .homeLink:active {
                     text-decoration: underline 1px;
                     text-underline-offset: 2px;
-                }
+                
             }
-            .aboutLink {
-                &:hover {
+            .aboutLink:hover, .aboutLink:active {
                     text-decoration: underline 1px;
                     text-underline-offset: 2px;
-                }
             }
         }
     }    

@@ -8,8 +8,9 @@ import AboutStyles from "../styles/pages/About.module.scss";
 const About = () => {
   return (
     <>
-      <div className={AboutStyles.bannerContainer}>
+      <div className={AboutStyles.bannerContainer}> 
         <Banner
+          // On passe en props un tableau contenant deux fichiers différents pour adapter la bannière à la résolution d'écran
           src={[BannerImgMobile, BannerImgDesktop]}
           alt="paysage de montagnes"
         />

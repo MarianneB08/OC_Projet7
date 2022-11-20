@@ -4,6 +4,8 @@ import CardStyles from '../styles/components/Card.module.scss';
 import PropTypes from 'prop-types';
 import DataFile from '../data.json';
 
+// Affichage de chaque appartement avec la méthode map appliquée au fichier .json contenant la liste des appartements
+// Création d'un lien sur chaque card renvoyant vers l'appartement associé à la card avec Link
 const Card = () => {
     return (
         <div className={CardStyles.cardBackground}>
@@ -23,6 +25,8 @@ const Card = () => {
     );
 };
 
+
+// Utilisation de propTypes pour valider les informations reçues par le composant
 Card.propTypes = {
     key: PropTypes.string,
     title: PropTypes.string,

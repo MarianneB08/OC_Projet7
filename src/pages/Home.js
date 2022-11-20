@@ -10,6 +10,7 @@ const Home = () => {
     <div>
       <div className={HomeStyles.bannerContainer}>
         <Banner
+          // On passe en props un tableau contenant deux fichiers différents pour adapter la bannière à la résolution d'écran
           src={[BannerImgMobile, BannerImgDesktop]}
           slogan={"Chez vous, partout et ailleurs"}
           alt="paysage marin"

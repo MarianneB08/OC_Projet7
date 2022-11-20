@@ -2,6 +2,7 @@ import React from 'react';
 import BannerStyles from '../styles/components/Banner.module.scss';
 
 
+// Composant Banner qui prévoit une image différente pour le format desktop et le format mobile 
 const Banner = ({ src, slogan, alt }) => {
     return (
             <div className={`${BannerStyles.bannerContainer} ${BannerStyles.bannerAboutContainer}`}>

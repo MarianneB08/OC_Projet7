@@ -7,9 +7,13 @@ import Collapse from '../components/Collapse';
 import LodgingsStyles from '../styles/pages/Lodgings.module.scss';
 
 const Lodgings = () => {
+    // Utilisation du hook useParams pour accéder au paramètre passé dans l'URL
     const params = useParams();
+    // Utilisation du hook useNavigate pour rediriger l'utilisation en cas d'erreur dans l'URL
     const navigate = useNavigate();
 
+    // Le hook useEffect gère ici le renvoi vers la page d'erreur en cas d'incohérence entre l'id d'un lodging et l'id contenu dans
+    // le paramètre de l'URL de la page courante
     useEffect(() => {
         let lodging = DataFile.find((lodging) => params.id === lodging.id);
         if (!lodging) {
@@ -18,7 +22,9 @@ const Lodgings = () => {
     })
 
     return (
-        <>
+        <>  
+            {/* La méthode filter permet de s'assurer que l'id de l'appartement match avec l'id contenu en paramètre de l'URL */}
+            {/* La méthode map permet ensuite de générer un nouveau tableau contenant les informations relatives à l'appartement donné */}
             {DataFile
                 .filter((lodging) => lodging.id === params.id)
                 .map((lodging) => (
