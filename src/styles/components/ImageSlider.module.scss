@@ -1,3 +1,7 @@
+/* ---------- IMPORT GLOBAL STYLES ---------- */
+
+@use "../globals.scss" as globals;
+
 /* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 
 .slider {
@@ -6,35 +10,25 @@
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: globals.$mobile-radius;
     position: relative;
     .slideImg {
         width: 100%;
         height: 255px;
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: globals.$mobile-radius;
     }
     .leftArrow {
-        position: absolute;
-        top: 47%;
+        @include globals.mobileSliderArrow;
         left: 10px;
-        z-index: 1;
-        cursor: pointer;
-        width: 11.7px;
-        height: 20px;
     }
     // En format mobile, le compteur de slides n'est pas affiché
     .slideCounter {
         opacity: 0;
     }
     .rightArrow {
-        position: absolute;
-        top: 47%;
+        @include globals.mobileSliderArrow;
         right: 10px;
-        z-index: 1;
-        cursor: pointer;
-        width: 11.7px;
-        height: 20px;
     }
     .hiddenArrow{
         display: none;
@@ -50,38 +44,28 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .slider {
         height: 415px;
-        border-radius: 25px;
+        border-radius: globals.$desktop-radius;
         margin-bottom: 24px;
         .slideImg {
             height: 415px;
-            border-radius: 25px;
+            border-radius: globals.$desktop-radius;
         }
         // En format desktop, le compteur de slides est affiché
         .slideCounter {
             opacity: 1;
-            color: #ffffff;
+            color: globals.$secondary-color;
             position: absolute;
             bottom: 25px;
             left: 50%;
             font-size: 18px;
         }
         .leftArrow {
-            position: absolute;
-            top: 45%;
+            @include globals.desktopSliderArrow;
             left: 23.3px;
-            z-index: 1;
-            cursor: pointer;
-            width: 30px;
-            height: 55px;
         }
         .rightArrow {
-            position: absolute;
-            top: 45%;
+            @include globals.desktopSliderArrow;
             right: 23.3px;
-            z-index: 1;
-            cursor: pointer;
-            width: 30px;
-            height: 55px;
         }
     }
 }
@@ -96,27 +80,23 @@
         margin-bottom: 24px;
         .slideImg {
             height: 415px;
-            border-radius: 25px;
+            border-radius: globals.$desktop-radius;
         }
         .slideCounter {
             opacity: 1;
-            color: #ffffff;
+            color: globals.$secondary-color;
             position: absolute;
             bottom: 25px;
             left: 50%;
             font-size: 18px;
         }
         .leftArrow {
+            @include globals.desktopSliderArrowPosition;
             left: 23.3px;
-            width: 47px;
-            height: 79px;
-            top: 39%;
         }
         .rightArrow {
+            @include globals.desktopSliderArrowPosition;
             right: 23.3px;
-            width: 47px;
-            height: 79px;
-            top: 39%;
         }
     }
 }

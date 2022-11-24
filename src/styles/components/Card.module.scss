@@ -1,3 +1,7 @@
+/* ---------- IMPORT GLOBAL STYLES ---------- */
+
+@use "../globals.scss" as globals;
+
 /* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 
 .cardBackground {
@@ -11,7 +15,7 @@
     .cardItem {
         width: 100%;
         height: 255px;
-        border-radius: 10px;
+        border-radius: globals.$mobile-radius;
         position: relative;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
         opacity: 1;
@@ -19,7 +23,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: globals.$mobile-radius;
             opacity: 0.8;
         }
         .cardTitle {
@@ -27,8 +31,8 @@
             width: 70%;
             overflow-wrap: break-word;
             bottom: 20px;
-            color: #FFFFFF;
-            font-family: 'Montserrat', sans-serif;
+            color: globals.$secondary-color;
+            font-family: globals.$font-family-1;
             font-size: 18px;
             font-weight: 500;
             margin-left: 20px; 
@@ -53,7 +57,7 @@
         max-width: 1240px;
         height: auto;
         padding: 56px 50px;
-        border-radius: 25px;
+        border-radius: globals.$desktop-radius;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
@@ -72,9 +76,9 @@
     .cardBackground {
         max-width: 1240px;
         height: 2800px;
-        background-color: #F6F6F6;
+        background-color: globals.$tertiary-color;
         padding: 56px 50px;
-        border-radius: 25px;
+        border-radius: globals.$desktop-radius;
         flex-direction: row;
         flex-wrap: wrap;
         .link {

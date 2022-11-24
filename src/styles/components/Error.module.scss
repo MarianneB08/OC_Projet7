@@ -1,3 +1,7 @@
+/* ---------- IMPORT GLOBAL STYLES ---------- */
+
+@use "../globals.scss" as globals;
+
 /* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 
 .errorContainer {
@@ -9,13 +13,13 @@
     .errorType {
         font-weight: 700;
         font-size: 96px;
-        color: #FF6060;
+        color: globals.$primary-color;
     }
     .errorDescription {
         margin-top: 11px;
         width: 260px;
         font-size: 18px;
-        color: #FF6060;
+        color: globals.$primary-color;;
         text-align: center;
     }
     .homeLink {

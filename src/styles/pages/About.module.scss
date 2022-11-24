@@ -1,3 +1,7 @@
+/* ---------- IMPORT GLOBAL STYLES ---------- */
+
+@use "../globals.scss" as globals;
+
 /* ---------- MOBILE-FIRST (max-width: 480px) ---------- */
 
 .bannerContainer {
@@ -10,8 +14,8 @@
   height: 50%;
   margin-top: 16px;
   margin-bottom: 22px;
-  background-color: #000000;
-  border-radius: 10px;
+  background-color: globals.$quaternary-color;
+  border-radius: globals.$mobile-radius;
 }
 
 .collapsesContainer {
@@ -27,7 +31,7 @@
 @media screen and (min-width: 481px) {
     .bannerContainer {
         height: 223px;
-        border-radius: 10px;
+        border-radius: globals.$mobile-radius;
         position: relative;
         max-width: 1240px;
     }
@@ -37,7 +41,7 @@
 
 @media screen and (min-width: 769px) {
   .bannerContainer {
-    border-radius: 10px;
+    border-radius: globals.$mobile-radius;
   }
   .collapsesContainer {
     width: 75%;
@@ -51,7 +55,7 @@
 
 @media screen and (min-width: 1025px) {
     .bannerContainer {
-        border-radius: 25px;
+        border-radius: globals.$desktop-radius;
     }
     .collapsesContainer {
       margin-top: 30px;
