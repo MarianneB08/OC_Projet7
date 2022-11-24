@@ -3,6 +3,7 @@ import HeaderStyles from '../styles/components/Header.module.scss';
 import { NavLink } from 'react-router-dom';
 import Logo from '../components/Images/logo_header.svg';
 
+// Mise en place du composant "Header", utilisation de NavLink pour la redirection des liens "Accueil" et "À propos"
 const Header = () => {
     return (
         <div className={HeaderStyles.headerContainer}>

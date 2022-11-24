@@ -25,6 +25,7 @@ const ImageSlider = ({ pictures }) => {
         <div className={ImageSliderStyles.slider}>
             <img
                 className={ImageSliderStyles.slideImg}
+                // L'index de l'array, matérialisé par 'currentIndex', est rendu dynamique grâce au hook useState
                 src={pictures[currentIndex]}
                 alt={pictures.title}
                 key={currentIndex} />

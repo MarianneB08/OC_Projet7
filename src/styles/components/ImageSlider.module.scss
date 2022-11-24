@@ -23,6 +23,7 @@
         width: 11.7px;
         height: 20px;
     }
+    // En format mobile, le compteur de slides n'est pas affiché
     .slideCounter {
         opacity: 0;
     }
@@ -55,6 +56,7 @@
             height: 415px;
             border-radius: 25px;
         }
+        // En format desktop, le compteur de slides est affiché
         .slideCounter {
             opacity: 1;
             color: #ffffff;

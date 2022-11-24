@@ -5,6 +5,7 @@ import HomeStyles from '../styles/pages/Home.module.scss';
 import BannerImgDesktop from "../components/Images/banner_home_desktop.jpg";
 import BannerImgMobile from "../components/Images/banner_home_mobile.jpg";
 
+// Mise en place de la page Home de l'application, qui contient les composants "Banner" et "Card"
 const Home = () => {
   return (
     <div>

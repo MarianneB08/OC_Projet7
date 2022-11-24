@@ -23,7 +23,7 @@
         margin-bottom: 100px;
         font-size: 14px;
         &:hover {
-            text-decoration: underline;
+            text-decoration: underline 1px;
         }
     }
 }
@@ -43,7 +43,7 @@
         .homeLink {
             font-size: 16px;
             &:hover {
-                text-decoration: underline;
+                text-decoration: underline 1px;
             }
         }
     }
@@ -67,7 +67,7 @@
             width: 100%;
             font-size: 18px;
             &:hover {
-                text-decoration: underline;
+                text-decoration: underline 1px;
             }
         }
     }

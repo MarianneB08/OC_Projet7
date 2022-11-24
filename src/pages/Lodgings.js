@@ -6,10 +6,11 @@ import LodgingInfos from '../components/LodgingInfos';
 import Collapse from '../components/Collapse';
 import LodgingsStyles from '../styles/pages/Lodgings.module.scss';
 
+// Mise en place de la page Lodgings qui affiche l'ensemble des informations relatives à un appartement donné
 const Lodgings = () => {
     // Utilisation du hook useParams pour accéder au paramètre passé dans l'URL
     const params = useParams();
-    // Utilisation du hook useNavigate pour rediriger l'utilisation en cas d'erreur dans l'URL
+    // Utilisation du hook useNavigate pour rediriger l'utilisateur en cas d'erreur dans l'URL
     const navigate = useNavigate();
 
     // Le hook useEffect gère ici le renvoi vers la page d'erreur en cas d'incohérence entre l'id d'un lodging et l'id contenu dans
@@ -45,6 +46,7 @@ const Lodgings = () => {
                             <div className={LodgingsStyles.collapse}>
                                 <Collapse
                                     title='Équipements'
+                                    // Utilisation de la méthode map afin de générer une balise <p> pour chaque équipement
                                     content={lodging.equipments.map((equipment, index) => (
                                         <p key={index}>{equipment}</p>
                                     ))} />

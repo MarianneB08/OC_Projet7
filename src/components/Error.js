@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ErrorStyles from '../styles/components/Error.module.scss';
 
+// Mise en place du composant "Error"
 const Error = () => {
     return (
         <div className={ErrorStyles.errorContainer}>
