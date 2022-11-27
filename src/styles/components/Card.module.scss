@@ -57,6 +57,7 @@
         max-width: 1240px;
         height: auto;
         padding: 56px 50px;
+        background-color: globals.$tertiary-color;
         border-radius: globals.$desktop-radius;
         flex-direction: row;
         justify-content: center;
@@ -64,26 +65,7 @@
         gap: 40px; 
         .link {
             height: auto;
-            width: 40%;
-            .cardItem {
-                height: 340px;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1350px)  {
-    .cardBackground {
-        max-width: 1240px;
-        height: 2800px;
-        background-color: globals.$tertiary-color;
-        padding: 56px 50px;
-        border-radius: globals.$desktop-radius;
-        flex-direction: row;
-        flex-wrap: wrap;
-        .link {
-            height: 340px;
-            width: 340px;
+            width: 30%;
             .cardItem {
                 height: 340px;
             }
