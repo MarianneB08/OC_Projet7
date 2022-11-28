@@ -29,7 +29,7 @@ const Lodgings = () => {
             {DataFile
                 .filter((lodging) => lodging.id === params.id)
                 .map((lodging) => (
-                    <div key={lodging.title}>
+                    <main key={lodging.title}>
                         <ImageSlider pictures={lodging.pictures} />
                         <LodgingInfos
                             title={lodging.title}
@@ -37,7 +37,7 @@ const Lodgings = () => {
                             tags={lodging.tags}
                             host={lodging.host}
                             rating={lodging.rating} />
-                        <div className={LodgingsStyles.collapsesContainer}>
+                        <section className={LodgingsStyles.collapsesContainer}>
                             <div className={LodgingsStyles.collapse}>
                                 <Collapse
                                     title='Description'
@@ -51,9 +51,8 @@ const Lodgings = () => {
                                         <p key={index}>{equipment}</p>
                                     ))} />
                             </div>
-                        </div>
-
-                    </div>
+                        </section>
+                    </main>
                 ))}
         </>
     )

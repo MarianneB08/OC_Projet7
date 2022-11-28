@@ -7,7 +7,7 @@ import AboutStyles from "../styles/pages/About.module.scss";
 
 const About = () => {
   return (
-    <>
+    <main>
       <div className={AboutStyles.bannerContainer}> 
         <Banner
           // On passe en props un tableau contenant deux fichiers différents pour adapter la bannière à la résolution d'écran
@@ -15,7 +15,7 @@ const About = () => {
           alt="paysage de montagnes"
         />
       </div>
-      <div className={AboutStyles.collapsesContainer}>
+      <section className={AboutStyles.collapsesContainer}>
         <Collapse
           key="Fiabilité"
           title="Fiabilité"
@@ -36,8 +36,8 @@ const About = () => {
           title="Sécurité"
           content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
         />
-      </div>
-    </>
+      </section>
+    </main>
   );
 };
 

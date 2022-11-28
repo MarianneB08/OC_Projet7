@@ -7,7 +7,7 @@ const LodgingInfos = ({ title, location, tags, host, rating }) => {
 
     return (
         <div className={LodgingInfosStyles.sections}>
-            <div className={LodgingInfosStyles.lodgingInfos}>
+            <section className={LodgingInfosStyles.lodgingInfos}>
                 <h1 className={LodgingInfosStyles.lodgingTitle}>{title}</h1>
                 <h2 className={LodgingInfosStyles.lodgingLocation}>{location}</h2>
                 <div className={LodgingInfosStyles.tagsList}>
@@ -15,8 +15,8 @@ const LodgingInfos = ({ title, location, tags, host, rating }) => {
                         <div key={index} className={LodgingInfosStyles.tag}>{tag}</div>
                     ))}
                 </div>
-            </div>
-            <div className={LodgingInfosStyles.hostAndRatingInfos}>
+            </section>
+            <section className={LodgingInfosStyles.hostAndRatingInfos}>
                 <div className={LodgingInfosStyles.host}>
                     <p className={LodgingInfosStyles.hostName}>{host.name}</p>
                     <img className={LodgingInfosStyles.hostPicture} src={host.picture} alt={host.name} />
@@ -24,7 +24,7 @@ const LodgingInfos = ({ title, location, tags, host, rating }) => {
                 <div className={LodgingInfosStyles.rating}>
                     <Rate rating={parseInt(rating)} />
                 </div>
-            </div>
+            </section>
         </div>
     );
 };
